@@ -1,3 +1,12 @@
+<?php
+
+require "form.php";
+
+$form = new Form("localhost", "root", "", "loginDb");
+$form->register();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,12 +64,12 @@
 								</div>
 
 								<div class="form-group m-0">
-									<button type="submit" class="btn btn-primary btn-block">
+									<button type="submit" name="submit" class="btn btn-primary btn-block">
 										Register
 									</button>
 								</div>
 								<div class="mt-4 text-center">
-									Already have an account? <a href="index.html">Login</a>
+									Already have an account? <a href="index.php">Login</a>
 								</div>
 							</form>
 						</div>
